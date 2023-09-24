@@ -30,7 +30,7 @@ class HomePage extends StatelessWidget {
                     "Change",
                     style: const TextStyle(
                       color: Colors.black87,
-                      fontSize: 25,
+                      fontSize: 24,
                       fontWeight: FontWeight.w400,
                     ),
                   ),
