@@ -1,9 +1,21 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
+
+  void _showToast() {
+    Fluttertoast.showToast(
+      msg: "This is a toast message.",
+      toastLength: Toast.LENGTH_SHORT, 
+      gravity: ToastGravity.BOTTOM, 
+      timeInSecForIosWeb: 1, 
+      backgroundColor: Colors.black45,
+      textColor: Colors.white, 
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -347,7 +359,7 @@ class HomePage extends StatelessWidget {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+            margin: const EdgeInsets.only(top: 20, left: 20, right: 20),
             padding:
                 EdgeInsets.only(right: 120, left: 120, top: 10, bottom: 10),
             decoration: BoxDecoration(
@@ -367,7 +379,7 @@ class HomePage extends StatelessWidget {
                 fontWeight: FontWeight.w400,
               ),
             ),
-          )
+          ),
         ],
       ),
     );
