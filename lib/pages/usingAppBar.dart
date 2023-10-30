@@ -72,6 +72,7 @@ class HomePage extends StatelessWidget {
               fontWeight: FontWeight.w400,
             ),
           ),
+          
           Row(
             children: const [
               Text(
@@ -134,6 +135,7 @@ class HomePage extends StatelessWidget {
             indent: 20,
             endIndent: 20,
           ),
+          
           Center(
             child: Container(
               margin: EdgeInsets.only(top: 20, left: 20, right: 20),
@@ -199,6 +201,7 @@ class HomePage extends StatelessWidget {
               ),
             ),
           ),
+          
           Container(
             margin: EdgeInsets.only(top: 20, left: 20, right: 20),
             child: Column(
